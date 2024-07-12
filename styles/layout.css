@@ -8,13 +8,15 @@
 
 main {
   overflow: auto;
-  padding: 5rem;
   & .main-container {
     background-color: var(--shape-body);
     border-radius: 0.75rem;
-    max-width: 33rem;
-    margin-right: auto;
-    padding: 8.12rem 5rem;
+    max-width: 50rem;
+    margin-top: 1.25rem;
+  }
+
+  & h1 {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -30,7 +32,8 @@ aside {
   }
 
   & .aside-container {
-    max-width: 31rem;
+    max-width: 25rem;
+    margin-left: auto;
   }
 
   & .bg-image {

@@ -1,0 +1,120 @@
+.about-event {
+  .radio-wrapper {
+    display: flex;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: #1c1f21;
+    border: 1px solid #363b40;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .radio-wrapper input {
+    display: none;
+  }
+
+  .radio-inner {
+    padding-top: 0.75rem;
+    display: inline-flex;
+    border-radius: 0.5rem;
+    width: 9.2rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .radio-inner input + label::before {
+    display: inline-block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    margin-bottom: 0.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .radio-inner input#insite + label::before {
+    background-image: url(../../assets/icons/insite.svg);
+  }
+
+  .radio-inner input#insite:checked + label::before {
+    background-image: url(../../assets/icons/insite-checked.svg);
+  }
+
+  .radio-inner input#remote + label::before {
+    background-image: url(../../assets/icons/video.svg);
+  }
+
+  .radio-inner input#remote:checked + label::before {
+    background-image: url(../../assets/icons/video-checked.svg);
+  }
+  .radio-inner:has(input:checked) {
+    background-color: #363b40;
+  }
+
+  .radio-inner input:checked + label {
+    font: 600 0.875rem / normal var(--font-family-3);
+  }
+}
+
+.personalize {
+  .radio-wrapper {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .radio-inner input {
+    appearance: none;
+  }
+
+  .radio-inner{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    
+  }
+
+  .radio-inner input{
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    border: 0.40rem solid #2D3136;
+  }
+
+  .radio-inner input#blue {
+    background-color: var(--brand-light);
+  }
+  .radio-inner input#navy {
+    background-color: var(--navy);
+  }
+  .radio-inner input#purple {
+    background-color: var(--purple);
+  }
+  .radio-inner input#fuschia {
+    background-color: var(--fuschia);
+  }
+  .radio-inner input#pink {
+    background-color: var(--pink);
+  }
+  .radio-inner input#red {
+    background-color: var(--danger);
+  }
+  .radio-inner input#orange {
+    background-color: var(--orange);
+  }
+  .radio-inner input#yellow {
+    background-color: var(--yellow);
+  }
+  .radio-inner input#lime {
+    background-color: var(--lime);
+  }
+  .radio-inner input#green {
+    background-color: var(--green);
+  }
+  .radio-inner input#cyan {
+    background-color: var(--cyan);
+  }
+
+}

@@ -37,81 +37,247 @@
 
       <main>
         <div class="main-container">
-          <h1>Crie seu convite</h1>
-          <fieldset class="about-event">
-            <legend>Sobre o evento</legend>
+          <form>
+            <h1>Crie seu convite</h1>
+            <fieldset class="about-event">
+              <div class="title-1">
+                <img src="./assets/icons/calendar.svg" alt="" />
+                <legend>Sobre o evento</legend>
+              </div>
 
-            <div class="input-wrapper">
-              <label for="title">Título</label>
-              <input
-                type="text"
-                name="title"
-                id="title"
-                placeholder="Nome do evento"
-              />
-            </div>
-
-            <div class="input-group">
               <div class="input-wrapper">
-                <label for="start_at">Início</label>
-                <input type="date" name="start_at" id="start_at" />
-              </div>
-              <div class="input-wrapper">
-                <label for="ends_at">Fim</label>
-                <input type="date" name="ends_at" id="ends_at" />
-              </div>
-              <div class="radio-group">
-                <label>Tipo</label>
-                <div class="radio-inner">
-                  <div class="radio-image">
-                    <img
-                      src="./assets/icons/insite.svg"
-                      alt="icone de construção"
-                    />
-                  </div>
-                  <input
-                    type="radio"
-                    name="type-shift"
-                    id="insite"
-                    value="Presencial"
-                  />
-                  <label for="insite">Presencial</label>
-                </div>
-                <div class="radio-inner">
-                  <div class="radio-image">
-                    <img src="./assets/icons/video.svg" alt="ícone de vídeo" />
-                  </div>
-                  <input
-                    type="radio"
-                    name="type-shift"
-                    id="remote"
-                    value="Remoto"
-                  />
-                  <label for="remote">Remoto</label>
-                </div>
-              </div>
-              <div class="input-wrapper">
-                <label for="location">Local</label>
+                <label for="title">Título</label>
                 <input
                   type="text"
-                  name="location"
-                  id="location"
-                  placeholder="Link ou enderço"
+                  name="title"
+                  id="title"
+                  placeholder="Nome do evento"
                 />
               </div>
-            </div>
 
-            <div class="input-wrapper">
-              <label for="description">Descrição</label>
-              <textarea
-                name="description"
-                id="description"
-                placeholder="Escreva sobre os detalhes do evento."
-                rows="5"
-                cols="30"
-              ></textarea>
-            </div>
-          </fieldset>
+              <div class="flex-1">
+                <div class="input-wrapper">
+                  <label for="start_at">Início</label>
+                  <input type="date" name="start_at" id="start_at" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="ends_at">Fim</label>
+                  <input type="date" name="ends_at" id="ends_at" />
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div class="input-wrapper">
+                  <label>Tipo</label>
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <input
+                        type="radio"
+                        name="type-shift"
+                        id="insite"
+                        value="presencial"
+                        checked
+                      />
+                      <label for="insite">Presencial</label>
+                    </div>
+                    <div class="radio-inner">
+                      <input
+                        type="radio"
+                        name="type-shift"
+                        id="remote"
+                        value="remoto"
+                      />
+                      <label for="remote">Remoto</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="location">Local</label>
+                  <input
+                    type="text"
+                    name="location"
+                    id="location"
+                    placeholder="Link ou enderço"
+                  />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Escreva sobre os detalhes do evento."
+                  rows="5"
+                  cols="30"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="personalize">
+              <div class="title-1">
+                <img
+                  src="./assets/icons/paintbrush-vertical.svg"
+                  alt="ícone de calendario"
+                />
+                <legend>Personalização</legend>
+              </div>
+
+              <div class="input-wrapper">
+                <label>Cor principal</label>
+                <div class="radio-wrapper flex-2">
+                  <div class="radio-inner">
+                    <input type="radio" name="colors" id="blue" value="blue" />
+                  </div>
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="purple"
+                      value="purple"
+                    />
+                  </div>
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="fuschia"
+                      value="fuschia"
+                    />
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="colors" id="pink"  checked/>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="colors" id="red" value="red" />
+                  </div>
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="yellow"
+                      value="yellow"
+                    />
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="colors" id="lime" value="lime" />
+                  </div>
+                  <div class="radio-inner">
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="green"
+                      value="grenn"
+                    />
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="colors" id="cyan" value="cyan" />
+                  </div>
+                </div>
+              </div>
+              <!-- 
+              <div class="input-wrapper">
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="birthday"
+                      id="birthday"
+                      value="birthday"
+                    />
+                    <label for="birthday">Aniversário</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="kids" id="kids" value="kids" />
+                    <label for="kids">Infantil</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="graduation"
+                      id="graduation"
+                      value="graduation"
+                    />
+                    <label for="graduation">Formatura</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="marriage"
+                      id="marriage"
+                      value="marriage"
+                    />
+                    <label for="marriage">Casamento</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="tea" id="tea" value="tea" />
+                    <label for="tea">Chá de panela</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="carnaval"
+                      id="carnaval"
+                      value="carnaval"
+                    />
+                    <label for="carnaval">Carnaval</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="pascoa"
+                      id="pascoa"
+                      value="pascoa"
+                    />
+                    <label for="pascoa">Páscoa</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="junine-fest"
+                      id="junine-fest"
+                      value="junine-fest"
+                    />
+                    <label for="junine-fest">São João</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="Halloween"
+                      id="Halloween"
+                      value="Halloween"
+                    />
+                    <label for="Halloween">Halloween</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="christimas"
+                      id="christimas"
+                      value="christimas"
+                    />
+                    <label for="christimas">Natal</label>
+                  </div>
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="other" id="other" value="other" />
+                    <label for="other">Outro</label>
+                  </div>
+                </div>
+              </div> -->
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>

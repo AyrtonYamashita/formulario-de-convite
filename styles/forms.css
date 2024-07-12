@@ -1,0 +1,25 @@
+@import url(../styles/fields/index.css);
+
+form {
+  padding: 5rem;
+}
+
+fieldset{
+  border: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+legend {
+  font: 700 1.25rem/1.25rem var(--font-family-2);
+}
+
+.title-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
