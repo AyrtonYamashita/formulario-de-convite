@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivite - Formulário de Convite</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <div class="bg-image">
+            <header>
+              <img src="./assets/Logo.svg" alt="ícone de logo festivite" />
+              <h1>Festivite</h1>
+              <p>Crie um convite digital para seu evento.</p>
+            </header>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+          <fieldset class="about-event">
+            <legend>Sobre o evento</legend>
+
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Nome do evento"
+              />
+            </div>
+
+            <div class="input-group">
+              <div class="input-wrapper">
+                <label for="start_at">Início</label>
+                <input type="date" name="start_at" id="start_at" />
+              </div>
+              <div class="input-wrapper">
+                <label for="ends_at">Fim</label>
+                <input type="date" name="ends_at" id="ends_at" />
+              </div>
+              <div class="radio-group">
+                <label>Tipo</label>
+                <div class="radio-inner">
+                  <div class="radio-image">
+                    <img
+                      src="./assets/icons/insite.svg"
+                      alt="icone de construção"
+                    />
+                  </div>
+                  <input
+                    type="radio"
+                    name="type-shift"
+                    id="insite"
+                    value="Presencial"
+                  />
+                  <label for="insite">Presencial</label>
+                </div>
+                <div class="radio-inner">
+                  <div class="radio-image">
+                    <img src="./assets/icons/video.svg" alt="ícone de vídeo" />
+                  </div>
+                  <input
+                    type="radio"
+                    name="type-shift"
+                    id="remote"
+                    value="Remoto"
+                  />
+                  <label for="remote">Remoto</label>
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="location">Local</label>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Link ou enderço"
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="description">Descrição</label>
+              <textarea
+                name="description"
+                id="description"
+                placeholder="Escreva sobre os detalhes do evento."
+                rows="5"
+                cols="30"
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

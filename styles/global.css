@@ -1,0 +1,64 @@
+:root {
+  /*Brand Colors*/
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  /*Accent Colors*/
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
+
+  /*Feedback colors*/
+  --danger: #ff5959;
+
+  /*Input Colors*/
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  /*Shape colors*/
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
+  /*Text colors*/
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+
+  /*-TIPOGRAFIAS-*/
+  --font-family-1: "Leckerli One", cursive;
+  --text-logo: 400 2.5rem/1 var(--font-family-1);
+
+  --font-family-2: "Baloo 2", sans-serif;
+  --heading-md: 700 1.75rem/1 var(--font-family-2);
+  --heading-sm: 700 1.12rem/1 var(--font-family-2);
+
+  --font-family-3: "Open Sans", sans-serif;
+  --body-md: 600 1rem/1 var(--font-family-3);
+  --body-sm: 600 0.87rem/1.5 var(--font-family-3);
+  --body-xs: 600 0.75rem/1 var(--font-family-3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  overflow: hidden;
+  font: var(--body-sm);
+  color: var(--text-body);
+  background-color: var(--shape-background);
+}
