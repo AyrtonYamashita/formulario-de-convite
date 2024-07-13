@@ -7,6 +7,7 @@
 }
 
 main {
+  
   overflow: auto;
   & .main-container {
     background-color: var(--shape-body);
@@ -41,7 +42,6 @@ aside {
     border-radius: 0.75rem;
     width: 400px;
     height: 728px;
-    background-position: center;
     background-size: cover;
     position: absolute;
     margin: 1.25rem;
