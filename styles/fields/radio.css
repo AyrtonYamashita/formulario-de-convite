@@ -82,6 +82,13 @@
     border: 0.4rem solid #2d3136;
   }
 
+  .radio-inner input:hover {
+    border: 0.4rem solid var(--shape-hover);
+  }
+  .radio-inner input:checked{
+    border: 0.4rem solid var(--shape-hover);
+  }
+
   .radio-inner input#blue {
     background-color: var(--brand-light);
   }
