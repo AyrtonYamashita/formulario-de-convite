@@ -120,32 +120,42 @@
 .flex-theme {
   .radio-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8.3rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     gap: 0.5rem;
-    justify-content: center;
+
   }
 
   .radio-inner {
+    display: grid;
+
+    border-radius: 0.5rem;
+    width: 8.3rem;
+    height: 6.43rem;
+    justify-content: center;
+    background-color: #2d3136;
     text-align: center;
-    width: 8.37rem;
-    height: 6.4rem;
-    border: 1px solid var(--input-stroke);
-    background-color: var(--shape-button);
-    border-radius: 0.5rem;
+    position: relative;
+
+    & img {
+      display: grid;
+      justify-content: center;
+      padding: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    & input {
+      position: absolute;
+      border-radius: 0.5rem;
+      width: 8.3rem;
+      height: 6.43rem;
+    }
   }
 
-  .radio-inner input {
-    appearance: none;
-    width: 100%;
-    height: 4rem;
-    background-size: cover;
-    background-position: center;
-    border-radius: 0.5rem;
-    padding: 0.25rem;
+  .radio-inner:hover {
+    background-color: var(--shape-hover);
   }
 
-  .radio-inner input#birthday{
-    background-image: url(../../assets/images/Image.png);
-
+  .radio-inner:has(input:checked) {
+    background-color: var(--shape-hover);
   }
 }

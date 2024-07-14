@@ -29,6 +29,10 @@ input:checked {
   outline: 2px solid var(--brand-light);
 }
 
+input[type="radio"]{
+  appearance: none;
+}
+
 textarea {
   height: 8.5rem;
 }
