@@ -1,0 +1,42 @@
+.input-group.file {
+  border: 1px solid red;
+}
+
+.file-wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  & input[type="file"]{
+    display: none;
+  }
+
+  & .file-name::before {
+    display: inline-block;
+    content: "Nenhum arquivo selecionado";
+    font: 400 1rem/normal var(--font-family-3);
+    color: var(--input-placeholder);
+    margin-left: 0.25rem;
+  }
+
+  & .file-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 7.47rem;
+    height: 2.5rem;
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    & label {
+      font: 600 0.875rem / normal var(--font-family-3);
+      margin-top: 0.7rem;
+      margin-left: 0.5rem;
+    }
+  }
+}

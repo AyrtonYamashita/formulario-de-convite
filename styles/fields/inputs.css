@@ -21,11 +21,14 @@ label{
   margin-bottom: 12px
 }
 
-input:focus{
+input[type="radio"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
   outline: 2px solid var(--brand-light);
 }
 
-input:checked {
+input[type="radio"]:checked {
   outline: 2px solid var(--brand-light);
 }
 
@@ -43,9 +46,10 @@ textarea {
   gap: 1rem;
 }
 
-.flex-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-  gap: 0.75rem;
 
+
+.flex-3 {
+  display: inline-flex;
+  justify-content: space-between;
 }
+
