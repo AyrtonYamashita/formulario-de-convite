@@ -29,7 +29,7 @@
     height: 1.5rem;
     width: 1.5rem;
     left: 0.25rem;
-    bottom: 0.15rem;
+    bottom: 0.2rem;
     border-radius: 999px;
     background-color: var(--input-stroke);
     -webkit-transition: 0.4s;
@@ -40,7 +40,7 @@
     background-color: var(--brand-light);
   }
 
-  & input:checked + .slider::before{
+  & input:checked + .slider::before {
     -webkit-transform: translateX(1.9rem);
     -ms-transform: translateX(1.9rem);
     transform: translateX(1.9rem);
@@ -48,7 +48,7 @@
   }
 
   & label {
-    margin-top: 0.35rem;
+    margin-top: 0.4rem;
     margin-left: 0.75rem;
   }
 
@@ -56,7 +56,40 @@
     content: "Escuro";
   }
 
-  input:checked ~ label[for="style"]:before{
+  input:checked ~ label[for="style"]:before {
     content: "Claro";
+  }
+}
+
+.terms .checkbox-inner {
+  & input {
+    display: none;
+  }
+
+  & input + label::before {
+    content: "";
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.25rem;
+    background-color: var(--input-base);
+    display: inline-block;
+    margin-right: 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  & input:checked + label::before {
+    transition: 0.2s ease-in-out;
+
+    border: 1px solid var(--brand-light);
+    background-image: url(../../assets/icons/check.svg);
+    background-size: contain;
+  }
+
+  & span {
+    color: var(--brand-light);
+    font-weight: 600;
+    text-decoration: underline;
   }
 }

@@ -1,5 +1,7 @@
 input[type="text"],
+input[type="email"],
 input[type="date"],
+input[type="tel"],
 textarea,
 select {
   appearance: none;
@@ -38,6 +40,25 @@ input[type="radio"]{
 
 textarea {
   height: 8.5rem;
+}
+
+input{
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+
+  & + small {
+    font: var(--text-sm);
+  }
+
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: 400 0.75rem/normal var(--font-family-3);
+    color: var(--danger);
+    margin-top: 0.5rem;
+  }
 }
 
 .flex-1{

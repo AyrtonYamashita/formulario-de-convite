@@ -125,9 +125,10 @@
 }
 
 .flex-theme {
-  border: 1px solid blue;
   .radio-wrapper {
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 2rem;
   }
 
   .radio-inner {

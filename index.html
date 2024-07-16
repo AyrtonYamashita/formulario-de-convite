@@ -335,14 +335,102 @@
                   <div class="file-wrapper">
                     <input type="file" name="cape" id="cape" />
                     <div class="file-button">
-                      <img src="./assets/icons/upload.svg" alt="" />
-                      <label for="cape">Selecionar</label>
+                      <label for="cape">
+                        <img src="./assets/icons/upload.svg" alt="" />
+                        Selecionar</label>
                     </div>
                     <div class="file-name"></div>
                   </div>
                 </div>
               </div>
             </fieldset>
+
+            <fieldset class="contact">
+              <div class="title-1">
+                <img src="./assets/icons/contact.svg" alt="" />
+                <legend>Dados para contato</legend>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <img src="./assets/icons/circle-alert.svg" alt="">
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <div class="input-group">
+                  <label for="mail">E-mail</label>
+                  <input
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="input-group">
+                  <label for="phone">Telefone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="(99) 99999-9999"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="terms">
+              <div class="checkbox-wrapper">
+                <div class="checkbox-inner">
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms"
+                    >Li e concordo com os
+                    <a href="#"><span>Termos e Condições</span></a> e com a
+                    <a href="#"><span>Política de Privacidade</span></a
+                    >.</label
+                  >
+                </div>
+                <div class="checkbox-inner">
+                  <input
+                    type="checkbox"
+                    name="update-email"
+                    id="update-email"
+                  />
+                  <label for="update-email"
+                    >Aceito receber atualizações e promoções por e-mail.</label
+                  >
+                </div>
+
+                <div class="checkbox-inner">
+                  <input type="checkbox" name="update-sms" id="update-sms" />
+                  <label for="update-sms"
+                    >Aceito receber atualizações e promoções por SMS.</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <footer>
+              <div class="input-wrapper">
+                <div class="input-inner">
+                  <label for="submit">
+                    <img src="./assets/icons/ticket.svg" alt="" />
+                    Gerar convite</label
+                  >
+                  <input type="submit" id="submit" />
+                </div>
+              </div>
+            </footer>
           </form>
         </div>
       </main>
