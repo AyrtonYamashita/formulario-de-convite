@@ -5,56 +5,35 @@
     border-radius: 0.5rem;
     background-color: #1c1f21;
     border: 1px solid #363b40;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
+    justify-content: space-evenly;
   }
 
   .radio-wrapper input {
     display: none;
   }
 
-  .radio-inner {
-    padding-top: 0.75rem;
+  & .radio-wrapper label {
     display: inline-flex;
+    margin-top: 0.2rem;
+    gap: 0.5rem;
     border-radius: 0.5rem;
-    width: 9.2rem;
+    width: 9.3rem;
+    min-width: 100%;
     height: 2.5rem;
     justify-content: center;
     align-items: center;
   }
 
-  .radio-inner input + label::before {
-    display: inline-block;
-    content: "";
-    width: 1rem;
-    height: 1rem;
-    vertical-align: middle;
-    margin-bottom: 0.2rem;
-    margin-right: 0.5rem;
-  }
+  & .radio-inner:has(:checked) {
+    & label {
+      border-radius: 0.5rem;
+      background-color: #363b40;
+      font: 600 0.875rem/normal var(--font-family-3);
+    }
 
-  .radio-inner input#insite + label::before {
-    background-image: url(../../assets/icons/insite.svg);
-  }
-
-  .radio-inner input#insite:checked + label::before {
-    background-image: url(../../assets/icons/insite-checked.svg);
-  }
-
-  .radio-inner input#remote + label::before {
-    background-image: url(../../assets/icons/video.svg);
-  }
-
-  .radio-inner input#remote:checked + label::before {
-    background-image: url(../../assets/icons/video-checked.svg);
-  }
-  .radio-inner:has(input:checked) {
-    background-color: #363b40;
-  }
-
-  .radio-inner input:checked + label {
-    font: 600 0.875rem / normal var(--font-family-3);
+    & svg path {
+      fill: var(--brand-light);
+    }
   }
 }
 
@@ -65,28 +44,25 @@
   }
 
   .radio-inner input {
-    appearance: none;
-  }
-
-  .radio-inner {
-    display: grid;
-    width: 100%;
-    justify-content: center;
+    display: none;
   }
 
   .radio-inner input {
     display: inline-flex;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
+    transition: 0.2s ease-in-out;
     border: 0.4rem solid #2d3136;
   }
 
   .radio-inner input:hover {
+    transition: 0.2s ease-in-out;
     border: 0.4rem solid var(--shape-hover);
   }
   .radio-inner input:checked {
     border: 0.4rem solid var(--shape-hover);
+    outline: 2px solid var(--brand-light);
   }
 
   .radio-inner input#blue {

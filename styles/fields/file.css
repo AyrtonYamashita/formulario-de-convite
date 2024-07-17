@@ -15,31 +15,9 @@
     margin-bottom: 0.75rem;
   }
 
-  & .file-button {
-    & img {
-      width: 1rem;
-      height: 1rem;
-      margin-top: 0.1rem;
-      vertical-align: middle;
-      margin-right: 0.5rem;
-    }
-
-    & label {
-      display: inline-flex;
-      cursor: pointer;
-      transition: 0.2s ease-in-out;
-      font: 600 0.875rem / normal var(--font-family-3);
-      background-color: var(--shape-button);
-      border-radius: 0.5rem;
-      padding-top: 0.6rem;
-      padding-left: 0.7rem;
-      width: 7.47rem;
-      height: 2.5rem;
-    }
-
     & label:hover {
       transition: 0.2s ease-in-out;
       background-color: var(--shape-hover);
     }
   }
-}
+
